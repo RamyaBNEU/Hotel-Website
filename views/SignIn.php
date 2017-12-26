@@ -17,7 +17,7 @@ $sql="select * from login where UserName ='".$uname."'AND Password='".$password.
 $result=mysql_query($sql);
 
 if(mysql_num_rows($result)==1){
-    header("Location: index.php"); 
+    header("Location: ../index.php"); 
     $msg='You have successfully logged in';
     exit();
 }
